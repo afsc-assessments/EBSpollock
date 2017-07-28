@@ -1,4 +1,3 @@
-
 ifdef ComSpec
     RM=del /F /Q
     COPY=copy
@@ -7,13 +6,12 @@ else
     COPY=cp
 endif
 
-all: pm
+all: pm_p
 
-pm: pm.tpl 
-	@admb -f pm.tpl 
-
+pm_p: pm_p.tpl 
+	@admb  pm_p.tpl 
 
 clean:
-	@$(RM) pm.cpp
-	@$(RM) pm.htp
-	@$(RM) pm.obj
+	@$(RM) pm_p.cpp
+	@$(RM) pm_p.htp
+	@$(RM) pm_p.obj
