@@ -1,0 +1,40 @@
+#SST 
+7.982222044	8.388888701	8.433999811	9.312444236	8.835110914	9.222444238	7.98288871	7.4766665	7.916222045	8.074444264	9.341333125	7.872888713	8.099555375	9.589333119	8.545555365	9.569777564	8.369555368	9.415333123	7.738666494	9.423555345	9.076666464	8.268222037	8.269777593	9.597555341	8.937555356	9.164666462	9.037555354	9.616666452	8.494666477	9.654444229	8.297110926	9.168888684	8.926222023	9.818222003	8.988666466	8.175999817	8.777777582	8.703777583	9.855110891	10.09688866	9.78288867	10.39155532	9.293333126	9.571999786	8.908444245	8.605555363	8.909333134	8.594888697
+# do_temp
+1
+# temp_phase           // phase for parameters in recruitment function
+4
+# do_pred              // switch to do the predation mortality (1=yes)
+1
+# pred_phase           // phase for parameters for estimating spatial predation
+5
+# n_pred_grp_nonpoll  // the number of non-pollock predator groups
+
+# n_pred_grp_poll     // the number of pollock predator groups
+
+# N_pred(1,n_pred_grp,1964,2014)   // the abindance of the predator groups
+
+# nstrata_pred           // the number of strata for computing spatial predation
+
+# strata(1,nstrata_pred)                      // vector of strata names
+
+# n_pred_ages                   // the number of ages which are preyed upon
+j
+# pred_ages(1,n_pred_ages)      // the ages which are preyed upon
+
+# poll_dist(1,n_pred_ages,1964,2014,1,nstrata_pred)  // the distribution of age 1 pollock across strata, by year
+
+# pred_dist_nonpoll(1,n_pred_grp,1964,2014,1,nstrata_pred)      // the distribution of predators by strata, by year 
+
+# area_pred(1,nstrata_pred)     // the strata area for getting predatuion by area (sq km)
+
+# nyrs_cons_nonpoll                  // the number of years for which we have estimates of nonpollock predator consumption
+
+# yrs_cons_nonpoll(1,nyrs_cons_nonpoll)                  // the years for which we have predator consumption estimates
+
+# obs_cons_nonpoll(1,n_pred_grp_nonpoll,1,nyrs_cons_nonpoll) // the time series of consumption estiates for each predator (kilotons)
+
+# oac_cons_nonpoll(1,n_pred_grp_nonpoll,1,nyrs_cons_nonpoll,1,n_pred_ages)      // the observed age comps for predation for each predator, by year   
+
+# sam_oac_cons_nonpoll(1,n_pred_grp_nonpoll,1,nyrs_
+
