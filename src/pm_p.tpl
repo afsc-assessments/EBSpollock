@@ -3211,11 +3211,11 @@ FUNCTION Recruitment_Likelihood
 
     if (active(resid_temp_int))
     {    // added by Paul
-      SR_resids_temp = (resid_temp_int + resid_temp_x1*SST(styr_est,endyr_est) + resid_temp_x2*elem_prod(SST(styr_est,endyr_est),SST(styr_est,endyr_est)));  //***** added by Paul ******
+		  // polynomial
+      SR_resids_temp = (resid_temp_int + resid_temp_x1 * SST(styr_est,endyr_est) + resid_temp_x2 * 
+			                 elem_prod(SST(styr_est,endyr_est),SST(styr_est,endyr_est)));  //***** added by Paul ******
       SR_resids_like = norm2(SR_resids - SR_resids_temp);    // *** added by Paul *****
     }
-
-      
 
     // Flag to ignore the impact of the 1978 YC on S-Rec estimation...
     if (ctrl_flag(25)<1)
